@@ -1,0 +1,18 @@
+\documentclass[10pt]{standalone}
+\usepackage{circuitikz}
+
+\begin{document}
+	\begin{circuitikz}[american voltages]
+		\draw
+		(0,0) to [short, *-] (7,0)
+		to [R, l^=$R_L$, v<=$V_{out}$] (7,4) 
+		to [short, i_<=$i_{out}$, -*] (5,4);
+		\draw  
+		(0,0) to [open, v<=$v_{in}$] (0,4) 
+		to [short, *- ,i=${i}_{in}$] (1,4) 
+		to [R, l=$R_s$] (3,4)
+		to [L, l=$L$] (5,4)
+		to [C, l_=$C$, -*] (5,0); 
+	\end{circuitikz}
+	
+\end{document}

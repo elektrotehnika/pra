@@ -1,0 +1,21 @@
+\documentclass[10pt]{standalone}
+\usepackage{pgfplots}
+
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[
+			axis lines = box,
+			grid=both,
+			xlabel = $x$,
+			ylabel = $T_7(x)$,
+			]
+			\addplot [
+			domain=-1.05:1.05, 
+			samples=100, 
+			color=black,
+			]
+			{64*x^7 - 112*x^5 + 56*x^3 - 7*x};
+		\end{axis}
+	\end{tikzpicture}
+	
+\end{document}
