@@ -1,0 +1,84 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[serbianc]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{hyperref, amsmath}
+\usepackage{titling}
+\usepackage{circuitikz}
+\usepackage{caption}
+
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large\textbf{#1}\end{center}
+    \vskip0.5em}%
+}
+
+\title{\textbf{Нумеричко израчунавање коришћењем програмског језика Пајтон}}
+\subtitle{Практикум из рачунарских алата - вежбе}
+\author{Исидора Грујић}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Задатак}
+
+За коло са слике~\ref{fig:DCCircuit} поставити систем једначина у складу са методом потенцијала чворова, а затим га решити користећи се одговарајућим методама написаним у програмском језику Пајтон. Познато је: $E_1=33\,\text{V}$, $E_2=18\,\text{V}$, $I_{g1}=30\,\text{mA}$, $I_{g2}=10\,\text{mA}$, $R_1=300\,\Omega$, $R_2=500\,\Omega$, $R_3=120\,\Omega$, $R_4=300\,\Omega$, $R_5=200\,\Omega$, $R_6=180\,\Omega$ и $R_7=520\,\Omega$.
+
+\vspace{0.025\textwidth}
+
+\begin{center}
+    \begin{circuitikz}[american, scale=0.8]
+            \draw (0,0) coordinate(Node1) to[R, l_=$R_3$, *-*] ++(0, -3) coordinate(Node2) to[R, l_=$R_4$, -*] ++(0, -3) coordinate(Node3) to[short] ++(-1.5, 1) to[isource, l^=$I_{g1}$, invert] ++(0, 4) to[short] (0, 0) to[short] ++(-3, 0) to[battery1, l_=$E_1$] ++(0, -3) coordinate(E1) to[R, l_=$R_1$] (E1 |- Node3) to[short] (Node3);
+            \draw (Node2) to[short] ++(1, 1) to[R, l^=$R_2$] ++(2, 0) to[battery1, l^=$E_2$, invert] ++(1.5, 0) coordinate(E2) to[short, -*] ++(1, -1) coordinate(Node0);
+            \draw (Node2) to[short] ++(1, -1) coordinate(Ig2) to[isource, l^=$I_{g2}$] (Ig2 -| E2) to[short] (Node0) to[R, l^=$R_6$] (Node0 |- Node3) to[R, l_=$R_7$] (Node3);
+            \draw (Node0) to[R, l_=$R_5$] (Node0 |- Node1) to[short] (Node1);
+        \end{circuitikz}
+        \captionof{figure}{Коло за први задатак.}
+        \label{fig:DCCircuit}
+\end{center}
+
+\section{Задатак}
+\begin{minipage}{0.5\textwidth}
+На слици~\ref{fig:RLCCircuit} дата је шема RLC кола. Одредити $i_{LC}(t)$ користећи се одговарајућим методама написаним у програмском језику Пајтон, ако је улазна струја облика $i_I(t)=I_I \cdot u(t)$, где је $u(t)$ јединична одскочна функција, и уз нулте почетне услове $i_L(0^-)=0$ и $v_C(0^-)=0$ у тренутку $t=0^-$. Познато jе: $I_I = 2\,\text{mA}$, $R = 1\,\text{k}\Omega$, $L = 1\,\text{H}$ и $C = 6\mathord{,}25\mu\text{F}$.\\
+Релација за струју кондензатора:
+\begin{equation}
+    i_C = C\,\frac{dv_C}{dt}
+\end{equation}
+Релација за напон на калему:
+\begin{equation}
+    v_L = L\,\frac{di_L}{dt}
+\end{equation}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.45\textwidth}
+\begin{center}
+\begin{circuitikz}[american, cute inductors, scale=0.9]
+\draw (0,0) to[isource, l2=$I_I$ and $i_i$, v=$V$] (0,4)
+to[short, i=$I_I$] (2,4)
+to[R=$R$, i>_=$i_R$] (2,0) to[short, *-] (0,0);
+\draw (2,4) to[short, i=$i_{LC}$, *-] (4,4)
+to[L=$L$] (4,2) to[C=$C$] (4,0) -- (2,0);
+\end{circuitikz}
+\captionof{figure}{Коло за други задатак.}
+\label{fig:RLCCircuit}
+\end{center}
+
+На основу претходних релација, као и директном применом Кирхофових закона изводи се диференцијална једначина по $i_{LC}$ која описује систем:
+\begin{equation}
+    \frac{d^2i_{LC}}{dt^2} + \frac{R}{L} \frac{di_{LC}}{dt} + \frac{1}{LC}\,i_{LC} = \frac{R}{L}\,I_I\,\delta(t)
+\end{equation}
+
+\end{minipage}
+
+\section{Задатак}
+Користећи се одговарајућим методама написаним у програмском језику Пајтон решити следећи интеграл:
+\begin{equation}
+    \int_{x = 0}^{1} \frac{x^2+1}{(x^3+3x+1)^2}dx
+\end{equation}
+
+\end{document}
