@@ -68,6 +68,7 @@
 * LaTeX - [пример](./материјали/LaTeX_вежбе2_поставка.pdf), [решење](https://github.com/elektrotehnika/pra/tree/master/%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D1%98%D0%B0%D0%BB%D0%B8/LaTeX_%D0%B2%D0%B5%D0%B6%D0%B1%D0%B52_%D1%80%D0%B5%D1%88%D0%B5%D1%9A%D0%B5).
 * Beamer LaTeX - [материјал](https://www.overleaf.com/learn/latex/Beamer), [пример](https://github.com/elektrotehnika/finlatex/tree/master/finbeamer).
 * Нумеричко рачунање у Пајтону - [поставка](./материјали/нумеричко_рачунање/поставка), [решење](./материјали/нумеричко_рачунање/numericko_izracunavanje.py).
+* Симболичко рачунање у Пајтону - [поставка](./материјали/симболичко_рачунање/поставка), [решење](./материјали/симболичко_рачунање/simbolicko_racunanje.py).
 
 <br>
 
