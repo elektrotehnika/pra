@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage[serbianc]{babel}
+\usepackage[T2A]{fontenc}
+
+\usepackage[margin=1in]{geometry}
+
+\renewcommand{\j}{{\rm j}}
+\newcommand{\e}{{\rm e}}
+\renewcommand{\d}{{\rm d}}
+\newcommand{\p}{{\textnormal{p}}}
+
+\begin{document}
+
+\paragraph{\color{red} Први задатак}
+{	Дата је функција
+	\begin{equation}
+		f\left(x\right)=\cos\left(x^2+2x+3\right)\sin\left(x-1\right).
+	\end{equation}
+	Одредити $f^{\prime}\left(x\right)$ и $f^{\prime\prime}\left(x\right)$, а затим скицирати све три функције уколико је $x\in\left(-10,\, 10\right)$.
+}
+
+\paragraph{\color{magenta}Други задатак}
+Одредити
+\[
+f\left(x\right)=\int_{-\infty}^{\infty}\frac{1 + x^2 + 2x^4}{2x^2}\d x
+\]
+
+
+\paragraph{\color{blue}Трећи задатак}
+	Произвољна периодична функција $x\left(t\right)$, периоде $T_{\p}$, може се представити у виду збира бесконачно много простопериодичних функција на следећи начин
+	\begin{equation}
+		x\left(t\right)=\sum_{k=-\infty}^{\infty}c_k \e^{\j k\omega_\p t},
+	\end{equation}
+	где су $c_k$, $k\in\left(-\infty,\,\infty\right)$, Фуријеови коефицијенти
+	\begin{equation}\label{Eq:c_k}
+		c_k=\frac{1}{T_\p}\int\limits_{T_\p}x\left(t\right)\e^{-\j k\omega_\p t}\d t,
+	\end{equation}
+	при чему је \[\omega_\p=\frac{2\pi}{T_\p}.\]
+
+Одредити коефицијенте Фуријеовог развоја периодичне функције 
+\begin{equation}\label{Eq:x_p}
+x\left(t\right)=\sum_{k=-\infty}^{k}p\left(t-kT_\p\right),
+\end{equation}
+уколико је $p\left(t\right)$:
+\begin{enumerate}
+	\item правоугаони импулс
+	\begin{equation}
+		p\left(t\right)=\begin{cases}
+			E, & t\in\left(-\tau/2,\,\tau/2\right),\,\tau\leq T_\p\\
+			0, & {\textnormal{иначе}},
+		\end{cases},
+	\end{equation}
+	\item тестерасти импулс
+	\begin{equation}
+		p\left(t\right)=\begin{cases}
+			Et, & t\in\left(0,\,T_\p\right)\\
+			0, & {\textnormal{иначе}},
+		\end{cases},
+	\end{equation}
+\end{enumerate}
+а затим приказати функцију
+\begin{equation}
+	\widetilde{x}\left(t\right)=\sum_{k=-N}^{N}c_k \e^{{\j} k\omega_{\p} t},
+\end{equation}
+у интервалу $t\in\left[-2T_\p,\,2T_\p\right]$, уколико је $E=3$, $T_{\p}=2$, $\tau=1$ и за три вредности параметра $N$: $N=3$, $N=10$ i $N=20$.
+
+\bigskip
+\noindent {\textsc{Напомена}: Имајући у виду релацију~\eqref{Eq:x_p}, коефицијенти Фуријеовог развоја, релација~\eqref{Eq:c_k}, могу се одредити на следећи начин:
+\begin{enumerate}
+	\item правоугаони импулс
+	\begin{equation}
+		c_k=\begin{cases}
+			\dfrac{1}{T_\p}\int\limits_{-\tau/2}^{\tau/2}E\d t, & k=0\\
+			\dfrac{1}{T_\p}\int\limits_{-\tau/2}^{\tau/2}E\e^{-\j k\omega_\p t}\d t, & k\neq 0
+		\end{cases}
+	\end{equation}
+	\item тестерасти импулс
+	\begin{equation}
+		c_k=\begin{cases}
+			\dfrac{1}{T_\p}\int\limits_{0}^{T_\p}Et\d t, & k=0\\
+			\dfrac{1}{T_\p}\int\limits_{0}^{T_\p}Et\e^{-\j k\omega_\p t}\d t, & k\neq 0
+		\end{cases}
+	\end{equation}
+\end{enumerate}
+}
+
+\end{document}
