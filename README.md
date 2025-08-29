@@ -219,3 +219,11 @@
 * **10**: од 91 до 100 поена
 
 </details>
+
+<br>
+
+## Резултати предиспитних обавеза и испита
+
+<br>
+
+[Резултати](https://docs.google.com/spreadsheets/d/1tOxJe2FRVjcSdx-z7FtxBHbWD3a2NMpTgY7bymdYFJc/) из школске 2024/2025. године.
