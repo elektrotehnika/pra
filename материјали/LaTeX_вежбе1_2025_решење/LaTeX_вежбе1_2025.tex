@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage{datetime}
+\usepackage[serbian]{babel}
+
+\begin{document}
+
+    \pagestyle{empty}
+
+    \noindent Пошто је освануо први снежни дан ове јесени (мада тренутна температура од 2\textdegree C више одговара зимској него јесењој), започећемо једним прикладним и лепо форматираним цитатом у окружењу \verb|quotation|:
+
+    \begin{quotation}
+    \quotedblbase Немојте бити много пословни и практични и из тог угла нападати и оговарати снег. Снег је велика небеска лепота и доброта. Снег треба волети, треба му се радовати, треба га поштовати.\textquotedblleft
+
+    \hfill --- Душко Радовић, \textit{Баш свашта, Сабрани списи}, 2006.
+    \end{quotation}
+
+    \textnormal{U tekstu se koriste} \textit{kurzivna}, \textbf{podebljana}, \textbf{\textit{kurzivna podebljana slova}}, {\large \textbf{\textit{krupna kurzivna podebljana slova}}} i slova \textsf{sans serif} familije.
+
+    \vspace{10pt}
+
+    \begin{center}
+    У наставку је дата функција за израчунавање вредности факторијела
+    \end{center}
+
+    \begin{verbatim}
+        def fact(n):
+            if n == 0:
+                return 1
+            else:
+                return n*fact(n - 1)
+    \end{verbatim}
+
+    \vspace{5pt}
+    \begin{tabular}{||l||r||}
+        \hline
+        Ime i prezime &	Broj indeksa\\
+        \hline
+        Petar Petrovi\'c & 621/23\\
+        Jovan Jovanovi\'c & 123/23\\
+        \v Zivko \v Zivkovi\'c & 15/18\\
+        \hline
+    \end{tabular}
+
+    \medskip
+
+    \begin{itemize}
+        \item За приказ кода користимо \verb|verbatim| окружењe, које даје излаз
+        у \verb|monospaced| фонту, у коме сваки карактер заузима исти хоризонтални размак.
+        \item Окружење \verb|tabular| користимо за генерисање табеле.
+        \item За подебљана слова се користи \verb|\textbf| команда,
+        а за курзивна \verb|\textit|.
+    \end{itemize}
+
+    \medskip
+
+    \begin{enumerate}
+        \item Прва нумерисана ставка
+        \item Друга нумерисана ставка
+        \item Трећа нумерисана ставка. Ово је наставак треће ставке како
+        бисмо видели како се понаша у новом реду.
+    \end{enumerate}
+
+    \medskip
+
+    \begin{description}
+        \item[itemize:] Окружење за генерисање ненумерисане листе.
+        \item[enumerate:] Окружење за генерисање нумерисане листе.
+        \item[description:] Окружење за генерисање описне листе.
+        У овом окружењу се налазимо тренутно.
+    \end{description}
+
+    \vfill
+    \noindent На \textit{\textbf{дну стране}} лево \hfill и десно\\
+    треба исписати датум и време коришћењем команди \verb|\today| и \verb|\currenttime|.
+
+    \vspace{1cm}
+
+    \noindent \today \hfill \currenttime
+
+\end{document}
