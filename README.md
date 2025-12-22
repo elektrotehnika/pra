@@ -63,13 +63,19 @@
 
 <br>
 
-* увод у Linux - [презентација](./материјали/linux_увод_през.pdf), [задаци за вежбу](./материјали/linux_увод_зад.md) , [белешке](./материјали/linux_увод_белешке) .
+* Увод у Linux - [презентација](./материјали/linux_увод_през.pdf), [задаци за вежбу](./материјали/linux_увод_зад.md) , [белешке](./материјали/linux_увод_белешке) .
 * Linux, скриптовање - [презентација](./материјали/linux_скриптовање_през.pdf), [задаци за вежбу](./материјали/linux_скриптовање_зад.md), [белешке](./материјали/linux_скриптовање_белешке.md) .
-* увод у Git - [презентација](./материјали/git_през.pdf), [задаци за вежбу](https://github.com/UnseenWizzard/git_training).
+* Увод у Git - [презентација](./материјали/git_през.pdf), [задаци за вежбу](https://github.com/UnseenWizzard/git_training).
 * LaTeX:
   * Пример 1: [поставка](./материјали/LaTeX_вежбе1_2025_поставка.pdf), [решење](./материјали/LaTeX_вежбе1_2025_решење/LaTeX_вежбе1_2025.tex).
   * Пример 2: [поставка](./материјали/LaTeX_вежбе2_2025_поставка.pdf), [решење](./материјали/LaTeX_вежбе2_2025_решење/main.tex), слика1: график ([PDF](./материјали/LaTeX_вежбе2_2025_решење/pgfplots_fig.pdf), [TEX](./материјали/LaTeX_вежбе2_решење/pgfplots_fig.tex)), слика2: шема ([PDF](./материјали/LaTeX_вежбе2_2025_решење/circuitikz_fig.pdf), [TEX](./материјали/LaTeX_вежбе2_решење/circuitikz_fig.tex)).
-* Beamer LaTeX - [материјал](https://www.overleaf.com/learn/latex/Beamer), [пример](https://github.com/elektrotehnika/finlatex/tree/master/finbeamer).
+  * Референцирање:
+    * Ручно: [TEX](./материјали/LaTeX_vezbe_2025_referenciranje/primer1_rucno/referenciranje.tex), [PDF](./материјали/LaTeX_vezbe_2025_referenciranje/primer1_rucno/referenciranje.pdf).
+    * BibTeX: [TEX](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/referenciranje.tex), [BIB](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/refs.bib), [PDF](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/referenciranje.pdf).
+  * Beamer: 
+    * [Mатеријал](https://www.overleaf.com/learn/latex/Beamer)
+    * Пример 1 (2025): [TEX](./материјали/LaTeX_vezbe_2025_beamer/slides.tex), [слика](./материјали/LaTeX_vezbe_2025_beamer/pgfplots_fig.pdf), [PDF](./материјали/LaTeX_vezbe_2025_beamer/slides.pdf).
+    * Пример 2: [finbeamer](https://github.com/elektrotehnika/finlatex/tree/master/finbeamer).
 * Нумеричко рачунање у Пајтону - [поставка](./материјали/нумеричко_рачунање/поставка), [решење](./материјали/нумеричко_рачунање/numericko_izracunavanje.py).
 * Симболичко рачунање у Пајтону - [поставка](./материјали/симболичко_рачунање/поставка), [решење](./материјали/симболичко_рачунање/simbolicko_racunanje.py).
 

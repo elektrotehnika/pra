@@ -1,0 +1,267 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer} % handout opcija sklanja dinamiku i vizuele efekte iy slajdova
+
+% Koristi se uz handouts opciju:
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm] % 2 slajda na jednu stranu
+%\pgfpagesuselayout{4 on 1}[a4paper, landscape, border shrink=5mm] % 4 slajda na jednu stranu
+%\pgfpagesuselayout{8 on 1}[a4paper, border shrink=2mm] % 8 slajdova na jednu stranu
+%
+
+\usetheme{default}% {Goettingen} {Copenhagen}
+\setbeamercovered{transparent}%{invisible} % važno za dinamiku
+\usecolortheme{default} %{seahorse}{rose}{wolverine}{infolines}
+
+%\usefonttheme{serif} % Podešavanje serif fonta. Korisno!
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[serbian]{babel}
+
+\usepackage{datetime}
+
+\title[\textbf{Naslov prezentacije}]{\textbf{\huge Naslov prezentacije}}
+\author{\textbf{Petar Petrović}}
+\date{\today}
+
+
+\begin{document}
+
+
+\begin{frame}
+
+    \titlepage
+
+\end{frame}
+
+
+\section{Dinamika običnog teksta}
+
+
+\begin{frame}{Jednostavna dinamika}
+
+    \pause
+    Prvi red \\
+    \pause
+    Drugi red \\
+    \pause
+    Treći red
+
+\end{frame}
+
+
+\begin{frame}{Nešto složenija dinamika}
+
+    \onslide<2->{Prvi red}\\
+    \onslide<3-3>{Drugi red}\\
+    \onslide<2-2>{Opet prvi red, ali kratko}\\
+    \onslide<4->{Treći red}\\
+
+\end{frame}
+
+
+\section{Nabrajanje stavki}
+
+
+\begin{frame}{Nabrajanje}
+
+    \begin{itemize}
+        \item <2-> Prva stavka
+        \item <3-> Druga stavka
+        \item <4-> Treća stavka
+        \item <2-> Još jedna prva stavka
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Nabrajanje redom}
+
+    \begin{itemize}
+        \item <+-> Prva stavka
+        \item <+-> Druga stavka
+        \item <+-> Treća stavka
+    \end{itemize}
+
+\end{frame}
+
+
+\section{Numerisane liste i jednačine}
+
+
+\begin{frame}{Numerisana lista}
+
+    \begin{enumerate}
+        \item <2-> Prva stavka
+        \item <3-> Druga stavka
+        \item <4-> Treća stavka
+    \end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Progresivno boldovanje}
+
+    \begin{enumerate}
+        \item \textbf<2->{Prva stavka}
+        \item \textbf<3->{Druga stavka}
+        \item \textbf<4->{Treća stavka}
+    \end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Progresivno boldovanje: naglašavanje jedne stavke}
+
+    \begin{enumerate}
+        \item \textbf<2-2>{Prva stavka}
+        \item \textbf<3-3>{Druga stavka}
+        \item \textbf<4-4>{Treća stavka}
+    \end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Jednačine + invisible}
+
+    \setbeamercovered{invisible}
+    Pitagorina teorema glasi:
+
+    \pause
+    \bigskip
+
+    $c^2=a^2+b^2$
+
+    %\[c^2=a^2+b^2\]
+
+    %\begin{equation}
+    %    c^2=a^2+b^2
+    %\end{equation}
+
+    \bigskip
+    \pause
+
+    \begin{center}
+        Znate li dokaz?
+    \end{center}
+
+    \setbeamercovered{dynamic} % ili {transparent}
+
+\end{frame}
+
+
+\section{Ubacivanje slika}
+
+
+\begin{frame}{Slike}
+
+    \pause
+
+    Često je potrebno ubaciti neku sliku, kao npr.
+
+    \bigskip
+    \pause
+
+    \includegraphics[scale=0.5]{pgfplots_fig.pdf}
+
+    \pause
+
+    što je već dobro poznat Čebiševljev polinom prve vrste sedmog reda.
+
+    \bigskip
+    \pause
+
+    Ali slika nije bila zamagljena kao što smo očekivali!!!
+
+\end{frame}
+
+
+\begin{frame}{Slika + invisible}
+
+    \setbeamercovered{invisible}%{dynamic}
+
+    \onslide<2->{Često je potrebno ubaciti neku sliku, kao npr.}
+
+    \bigskip
+    \onslide<3->{\includegraphics[scale=0.5]{pgfplots_fig.pdf}}
+
+    \onslide<4->{što je već dobro poznat Čebiševljev polinom prve vrste sedmog reda.}
+
+    \bigskip
+    \onslide<5->{Umesto da zamaglimo sliku koristili smo invisible format.}
+
+    \bigskip
+    \onslide<6->{Da bi se slika zamaglila potrebno je napraviti novu zamagljenu sliku (malo više posla).}
+
+    \setbeamercovered{dynamic}
+
+\end{frame}
+
+
+\section{Boje}
+
+
+\begin{frame}{Bojena slova}
+
+    \begin{Large}
+    \textcolor{red}{Crveni red} \\
+    \pause
+    \textcolor{blue}{Plavi red} \\
+    \pause
+    \textcolor{cyan}{Cyan red (svetlo plavi)} \\
+    \pause
+    \textcolor{magenta}{Magenta red} \\
+    \pause
+    \textcolor{yellow}{Žuti red} \\
+    \pause
+    \textcolor{green}{Zeleni red} \\
+    \end{Large}
+\end{frame}
+
+
+\beamertemplatesolidbackgroundcolor{teal!20}
+
+\begin{frame}{\textcolor{teal}{\textbf{Bojena pozadina}}}
+
+    \begin{Huge}
+        \textcolor{teal}{sa tamnim slovima}
+    \end{Huge}
+
+\end{frame}
+
+\beamertemplatesolidbackgroundcolor{white}
+
+
+\section{Kolone}
+
+
+\begin{frame}{Raspoređivanje u dve kolone}
+
+    \begin{columns}
+        \column{5cm}
+            \onslide <2-> Gore levo \\
+            \onslide <3-> Dole levo \\
+        \column{5cm}
+            \onslide <4-> Gore desno \\
+            \onslide <5-> Dole desno \\
+    \end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Raspoređivanje u više kolona}
+
+    \begin{columns}
+        \column{3cm}
+            \onslide <2-> Gore levo \\
+            \onslide <2-> Dole levo \\
+        \column{3cm}
+            \onslide <3-> Gore u sredini \\
+            \onslide <3-> Dole u sredini \\
+        \column{3cm}
+            \onslide <4-> Gore desno \\
+            \onslide <4-> Dole desno \\
+    \end{columns}
+\end{frame}
+
+\end{document}

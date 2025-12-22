@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[serbian]{babel}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\usepackage[margin=2cm]{geometry}
+
+\title{Referenciranje}
+\author{Petar Petrović}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Uvod}
+
+Ovde ću citirati \cite{TRF}.
+
+\section{Zaključak}
+
+Ovde citiram referencu reda radi, \cite{rr}.
+
+\begin{thebibliography}{[X]}
+
+\bibitem{TRF}
+    J.~A.~Tierno, A.~V.~Rylyakov, and D.~J.~Friedman, ``A wide power supply range, wide tuning range, all static CMOS all digital PLL in 65\,nm SOI,'' \emph{IEEE Journal of Solid-State Circuits}, vol. 43, no. 1, pp. 42--51, 2008, doi: \href{https://www.doi.org/10.1109/JSSC.2007.910966}{10.1109/JSSC.2007.910966}.
+
+\bibitem{rr}
+    Ovo je referenca reda radi.
+
+\end{thebibliography}
+
+\end{document}
