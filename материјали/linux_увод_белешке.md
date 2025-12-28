@@ -267,7 +267,7 @@ Neki proizvoljan sadržaj.
 Ако сада ```user``` покуша уписати садржај у датотеку ```file2.txt``` (односно покрене ```write_to_file``` програм и унесе ```file2.txt``` у промпту за назив датотеке) добија се следећи испис:
 
 ```bash
-./write_to_file
+$ ./write_to_file
 Unesite naziv datoteke: file2.txt
 Nije moguće otvoriti datoteku za upis: Permission denied
 ```
