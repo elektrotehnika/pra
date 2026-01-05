@@ -7,7 +7,7 @@ int main() {
     char filename[100];
 
     // Traži od korisnika da unese naziv datoteke
-    printf("Unesite naziv datoteke: ");
+    printf("Унесите назив датотеке: ");
     fgets(filename, sizeof(filename), stdin);  // Unos sa tastature
 
     // Uklanjanje novog reda na kraju unosa (ako postoji)
@@ -18,7 +18,7 @@ int main() {
 
     if (file == NULL) {
         // Ako datoteka ne postoji, ispiši grešku i izađi iz programa
-        perror("Datoteka ne postoji");
+        perror("Датотека не постоји");
         return 1;
     }
 
@@ -28,18 +28,18 @@ int main() {
     file = fopen(filename, "w");
 
     if (file == NULL) {
-        perror("Nije moguće otvoriti datoteku za upis");
+        perror("Није могуће отворити датотеку за упис");
         return 1;
     }
 
     // Upisivanje sadržaja u datoteku
-    fprintf(file, "Strogo definisan sadržaj datoteke %s.\n", filename);
+    fprintf(file, "Строго дефинисан садржај датотеке %s.\n", filename);
 
     // Zatvaranje fajla
     fclose(file);
 
     // Informacija o uspešnom upisu
-    printf("Sadržaj je uspešno upisan u datoteku %s.\n", filename);
+    printf("Садржај је успешно уписан у датотеку %s.\n", filename);
 
     return 0;
 }
