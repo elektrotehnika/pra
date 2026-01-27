@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.3.4">
+  <diagram name="Page-1" id="JjUl3y_1YRM5yrsJOM8f">
+    <mxGraphModel dx="826" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;perimeterSpacing=1;" value="" vertex="1">
+          <mxGeometry height="160" width="490" x="180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="110" width="130" x="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-2" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Short Stack;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;fontSize=19;fontColor=#000000;" value="&lt;div&gt;&lt;font&gt;Working&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;directory&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="205" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="20" width="90" x="220" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;spacingBottom=3;fontStyle=1" value="&lt;font face=&quot;Short Stack&quot;&gt;dev_env&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="235" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=Short Stack;fontSize=17;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;" value="$ git add info.txt" vertex="1">
+          <mxGeometry height="30" width="260" x="180" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-13" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Short Stack;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;fontSize=19;fontColor=#000000;" value="&lt;div&gt;Staging&lt;/div&gt;&lt;div&gt;area&lt;/div&gt;&lt;div&gt;(index)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="100" x="375" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="80" width="130" x="520" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="czqslAH7XW8ctqwJ3Mgc-16" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Short Stack;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;fontSize=19;fontColor=#000000;" value="&lt;div&gt;Local&lt;/div&gt;&lt;div&gt;repository&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="515" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-1" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="207.5" y="289.52" as="sourcePoint" />
+            <mxPoint x="322.5" y="289.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-2" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Short Stack;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;fontSize=19;fontColor=#000000;" value="&lt;div&gt;info.txt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="210" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="120" width="130" x="360" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Short Stack;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;fontSize=19;fontColor=#7EB164;" value="&lt;div&gt;info.txt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="370" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-5" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="368" y="299.52" as="sourcePoint" />
+            <mxPoint x="483" y="299.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-7" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=2.72;dx=13.02;arrowHead=15.02;rotation=-135;horizontal=1;flipH=1;legacyAnchorPoints=0;strokeColor=#0000CC;spacingTop=0;" value="" vertex="1">
+          <mxGeometry height="24.66" width="40" x="350" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="3_yyW73XRvtPpQF4c3bS-9" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Short Stack;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DShort%2BStack;fontSize=14;fontColor=#0000CC;spacingTop=8;" value="&lt;div&gt;info.txt is staged&amp;nbsp;(added to the&lt;/div&gt;&lt;div&gt;index) and becomes tracked!&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="280" x="360" y="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
