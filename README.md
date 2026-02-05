@@ -268,7 +268,7 @@
 <br>
 
 На испиту и колоквијуму је физички (на папиру и флешу) дозвољена литература по жељи, док је дозвољена **онлајн** литература следећа:
-* [Страница предмета](https://www.cis.kg.ac.rs/pra/) 
+* [Страница предмета](https://www.cis.kg.ac.rs/pra/) (aли не и сви спољни линкови са исте!)
 * [Overleaf](https://www.overleaf.com) 
 * [SymPy документација](https://docs.sympy.org/latest/index.html) 
 * [NumPy документација](https://numpy.org/doc/stable/) 
