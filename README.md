@@ -125,7 +125,7 @@
 <br>
 
 * **Linux 🐧**:
-  * [Упутство](./материјали/linux_dual_boot_instalacija.md) за инсталацију
+  * [Упутство за инсталацију](./материјали/linux_dual_boot_instalacija.md)
   * Увод у Linux 💻:
     * [презентација](./материјали/linux_увод_през.pdf)
     * [белешке](./материјали/linux_увод_белешке)
@@ -134,25 +134,37 @@
     * [презентација](./материјали/linux_скриптовање_през.pdf)
     * [белешке](./материјали/linux_скриптовање_белешке.md)
     * [задаци за вежбу](./материјали/linux_скриптовање_зад.md)
+  * [Брзи водич кроз Linux наредбе](https://phoenixnap.com/kb/wp-content/uploads/2023/11/linux-commands-cheat-sheet-pdf.pdf)
 * **Git 🔀**:
     * [презентација](./материјали/git_през.pdf)
     * [белешке](./материјали/git_белешке.md)
     * [пример за вежбу](https://github.com/UnseenWizzard/git_training)
 * **LaTeX ✒️**:
   * [белешке](./материјали/latex_белешке.md)
-  * Пример 1: [поставка](./материјали/LaTeX_вежбе1_2025_поставка.pdf), [решење](./материјали/LaTeX_вежбе1_2025_решење/LaTeX_вежбе1_2025.tex).
-  * Пример 2: [поставка](./материјали/LaTeX_вежбе2_2025_поставка.pdf), [решење](./материјали/LaTeX_вежбе2_2025_решење/main.tex).
-    * слика1: график 📈 ([PDF](./материјали/LaTeX_вежбе2_2025_решење/pgfplots_fig.pdf), [TEX](./материјали/LaTeX_вежбе2_решење/pgfplots_fig.tex)).
-    * слика2: шема 🔌 ([PDF](./материјали/LaTeX_вежбе2_2025_решење/circuitikz_fig.pdf), [TEX](./материјали/LaTeX_вежбе2_решење/circuitikz_fig.tex)).
+  * Пример 1: [поставка](./материјали/LaTeX_вежбе1_2025_поставка.pdf), [решење](./материјали/LaTeX_вежбе1_2025_решење/LaTeX_вежбе1_2025.tex)
+  * Пример 2: [поставка](./материјали/LaTeX_вежбе2_2025_поставка.pdf), [решење](./материјали/LaTeX_вежбе2_2025_решење/main.tex)
+    * слика1: график 📈 ([PDF](./материјали/LaTeX_вежбе2_2025_решење/pgfplots_fig.pdf), [TEX](./материјали/LaTeX_вежбе2_решење/pgfplots_fig.tex))
+    * слика2: шема 🔌 ([PDF](./материјали/LaTeX_вежбе2_2025_решење/circuitikz_fig.pdf), [TEX](./материјали/LaTeX_вежбе2_решење/circuitikz_fig.tex))
   * Референцирање:
-    * Ручно: [TEX](./материјали/LaTeX_vezbe_2025_referenciranje/primer1_rucno/referenciranje.tex), [PDF](./материјали/LaTeX_vezbe_2025_referenciranje/primer1_rucno/referenciranje.pdf).
-    * BibTeX: [TEX](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/referenciranje.tex), [BIB](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/refs.bib), [PDF](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/referenciranje.pdf).
+    * Ручно: [TEX](./материјали/LaTeX_vezbe_2025_referenciranje/primer1_rucno/referenciranje.tex), [PDF](./материјали/LaTeX_vezbe_2025_referenciranje/primer1_rucno/referenciranje.pdf)
+    * BibTeX: [TEX](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/referenciranje.tex), [BIB](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/refs.bib), [PDF](./материјали/LaTeX_vezbe_2025_referenciranje/primer2_bibtex/referenciranje.pdf)
   * Beamer: 
     * [Упутство](https://www.overleaf.com/learn/latex/Beamer)
-    * Пример 1: [TEX](./материјали/LaTeX_vezbe_2025_beamer/slides.tex), [слика](./материјали/LaTeX_vezbe_2025_beamer/pgfplots_fig.pdf), [PDF](./материјали/LaTeX_vezbe_2025_beamer/slides.pdf).
-    * Пример 2: [finbeamer](https://github.com/elektrotehnika/finlatex/tree/master/finbeamer).
-* **Нумеричко рачунање у Пајтону 🧮🐍**: [поставка](./материјали/нумеричко_рачунање/поставка/numericko_izracunavanje.pdf), [решење](./материјали/нумеричко_рачунање/numericko_izracunavanje.py).
-* **Симболичко рачунање у Пајтону 🧠🐍**: [поставка](./материјали/симболичко_рачунање/поставка/simbolicko_racunanje.pdf), [решење](./материјали/симболичко_рачунање/simbolicko_racunanje.py).
+    * Пример 1: [TEX](./материјали/LaTeX_vezbe_2025_beamer/slides.tex), [слика](./материјали/LaTeX_vezbe_2025_beamer/pgfplots_fig.pdf), [PDF](./материјали/LaTeX_vezbe_2025_beamer/slides.pdf)
+    * Пример 2: [finbeamer](https://github.com/elektrotehnika/finlatex/tree/master/finbeamer)
+* **Нумеричко рачунање у Пајтону 🧮🐍**: 
+  * [пример 2024/2025](./материјали/нумеричко_рачунање/поставка/numericko_izracunavanje.pdf), [решење](./материјали/нумеричко_рачунање/numericko_izracunavanje.py)
+  * [NumPy документација](https://numpy.org/doc/stable/) 
+  * [SciPy документација](https://docs.scipy.org/doc/scipy/)
+  * Matplotlib:
+    * [документација](https://matplotlib.org/stable/index.html)
+    * [Брзи водич 1](https://matplotlib.org/cheatsheets/handout-beginner.pdf)
+    * [Брзи водич 2](https://matplotlib.org/cheatsheets/handout-intermediate.pdf)
+    * [Брзи водич 3](https://matplotlib.org/cheatsheets/handout-tips.pdf)
+* **Симболичко рачунање у Пајтону 🧠🐍**: 
+  * [пример 2024/2025](./материјали/симболичко_рачунање/поставка/simbolicko_racunanje.pdf), [решење](./материјали/симболичко_рачунање/simbolicko_racunanje.py).
+  * [SymPy документација](https://docs.sympy.org/latest/index.html) 
+  * [Брзи водич кроз SymPy](https://www.deeplearning.lipingyang.org/wp-content/uploads/2019/03/SymPy-Cheatsheet.pdf)
 
 <br>
 
